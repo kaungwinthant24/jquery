@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ui tooltip Method</title>
+	<link href="./libs/jquery-ui-1.13.1/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+		body{
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.containerz{
+			width: 900px;
+			background-color: #f4f4f4;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h3>How to use jQuery Tooltip !</h3>
+		<p><a href="#" id="ttone" title="This is tooltip of jQuery UI!">it is used </a>in conjuction with a cursor , when a user hovers over the pionter over an item without clicking.</p>
+
+		<form action="" method="" >
+			<div class="form-group">
+				<label for="dob">Date of Birth</label>
+				<input type="text" name="dob" id="dob" class="form-control" title="your age must be over 18 " autocomplete="off" readonly />
+			</div>
+		</form>
+	</div>
+	
+
+
+	<script src="./libs/jquery-3.6.0.min.js" type="text/javascript"></script>
+	<script src="./libs/jquery-ui-1.13.1/jquery-ui.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		// console.log("hey");
+		$(document).ready(function(){
+			// console.log('hi');
+			// $('#ttone').tooltip();
+
+			// $('#ttone').tooltip({
+			// 	// show:2000,
+			// 	// hide:3000,
+
+			// 	// show:"bounce",  // shake
+			// 	// hide:"explode",
+
+			// 	// show:{
+			// 	// 	effect:"bounce",
+			// 	// 	duration:3000
+			// 	// },
+
+			// 	// hide:{
+			// 	// 	effect:"explode",
+			// 	// 	duration:4000
+			// 	// },
+
+			// 	track:true,
+
+			// 	// content:"Hello World, I'm learning jQuery!"
+
+			// 	content:function(){
+			// 		// var html = `<img src='./img/logo1.png' width='150px' />`;
+			// 		var html = `<img src='./img/logo1.png' width='150px' /> <h5 align="center">Our Apple Company</h5> <small>Hello World, I'm learning jQuery!</small>`;
+			// 		return html;
+			// 	}
+			// });
+
+			// $('#dob').tooltip().datepicker();
+
+			$(document).tooltip();
+
+
+		});
+	</script>
+</body>
+</html>
